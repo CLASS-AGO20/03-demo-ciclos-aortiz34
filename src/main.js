@@ -30,6 +30,7 @@ export default class App {
         }
         return suma;
     }
+    
 }
 
 let app = new App();
