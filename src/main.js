@@ -10,11 +10,11 @@ export default class App {
         return suma;
     }
 
-    contarImparesFor(numero1, numero2){
+    contarImparesFor(inicio, fin){
         let contador = 0;
-        for (let i = numero1; i <= numero2; i++) {
+        for (let i = inicio; i <= fin; i++) {
             if (i % 2 !== 0 ){
-                contador = contador + 1;
+                contador += 1;
             }
         }
         return contador;
