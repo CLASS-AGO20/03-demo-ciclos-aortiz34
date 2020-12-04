@@ -43,6 +43,18 @@ export default class App {
         }
         return contador;
     }
+
+    sumarParesDo(){
+        let suma = 0;
+        let i = 1;
+        do {
+            if (i % 2 === 0){
+                suma += i
+            }
+            i += 1;
+        } while (i <= 20);
+        return suma;
+    }
 }
 
 
@@ -55,3 +67,5 @@ console.log(app.contarImparesFor(12,24));
 console.log(app.sumarParesWhile());
 
 console.log(app.contarImparesWhile(12,24));
+
+console.log(app.sumarParesDo());
